@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Centered container for forms */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form styling */
+form, .form-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px; /* Limit form width */
+  margin: 0 auto;
+}
+
+form h2, .form-container h2 {
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+/* Input fields */
+input, textarea, select {
+  width: 40%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  margin-left: 20%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 20%; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Alert messages */
+.alert {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Task Details */
+.task-details {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%; /* Make sure the task details container doesn't take full width */
+  max-width: 600px; /* Limit maximum width */
+}
+
+.task-details h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-details p {
+  margin: 5px 0;
+}
+
+/* Buttons in task details */
+.task-details button {
+  width: auto;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.task-details button.delete {
+  background-color: #dc3545;
+}
+
+.task-details button.delete:hover {
+  background-color: #a71d2a;
+}
+
+.task-details button.edit {
+  background-color: #28a745;
+}
+
+.task-details button.edit:hover {
+  background-color: #218838;
+}
